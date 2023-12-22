@@ -40,6 +40,7 @@ header{
     height: 8rem;
     /* justify-content: space-between; */
     box-shadow: var(--box-shadow);
+    z-index: 10000;
 }
 header .navbar{
     margin: 0 auto;
@@ -138,5 +139,9 @@ height: 100vh;
   transform: translate(2px, 2px);
 }
 /* button style end */
+
+.swiper-pagination-bullet{
+    background: #422800!important;
+}
 
 /* slider style end */
