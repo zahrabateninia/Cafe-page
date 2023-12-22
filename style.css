@@ -147,7 +147,6 @@ height: 100vh;
 /* menu style start */
 .menu {
     background-image: url(images/coffeeSeeds.jpg);
-    box-shadow: rgb(235, 238, 242) 0px 20px 30px -10px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -192,3 +191,35 @@ height: 100vh;
     padding: .5rem;
 }
 /* menu style end */
+
+/* contact style start */
+.contact{
+    background-color: var(--light-brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.contact .info{
+    display: grid;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: .8;
+}
+.contact .map iframe{
+    padding: 3rem;
+    border-radius: 3.5rem;
+}
+
+.telephone{
+    color: #422800;
+}
+
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+/* contact style end */
