@@ -32,11 +32,12 @@ header{
     left: 0;
     right: 0;
     background-color: var(--dark-slate-blue);
-    padding: 1.7rem 7%; 
+    padding: 1.7rem 3rem; 
     /* a padding of 7% of the element's containing block's 
     width for the left and right padding. */
     display: flex;
     align-items: center;
+    height: 8rem;
     /* justify-content: space-between; */
     box-shadow: var(--box-shadow);
 }
@@ -49,7 +50,7 @@ header .navbar{
 header .navbar a{
     font-size: 1.5rem;
     color: var(--light-beige);
-    padding: .5rem 1rem;
+    padding: .5rem 7%;
     border: .1rem solid transparent; 
     /* it won't have a visible color but will still occupy the specified width */
 
@@ -60,3 +61,82 @@ header .navbar a:hover{
     color: #fff;
     border: .1rem solid rgba(198, 172, 143, .2);
 }
+
+ /* slider style start */
+ .home{
+    padding-top: 8rem;
+ }
+
+.home .home-slider .slide{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+height: 100vh;
+}
+.home .home-slider .slide1{
+    background: url(images/simpleCup.jpg);
+}
+
+.home .home-slider .slide2{
+    background: url(images/esperso.jpg);
+}
+
+.home .home-slider .slide3{
+    background: url(images/nathan-dumlao-6VhPY27jdps-unsplash.jpg);
+}
+
+.home .home-slider .slide1,
+.home .home-slider .slide2,
+.home .home-slider .slide3{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home .home-slider .slide .content{
+    /* text-align: center; */
+    padding-left: 9rem;
+}
+.home .home-slider .slide .content h3{
+    color: #fff;
+    font-size: 5rem;
+}
+.home .home-slider .slide .content h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.home .home-slider .slide .content p{
+    color: var(--light-brown);
+    font-size: 1.9rem;
+    padding: 2rem 0;
+}
+/* button style start */
+.order-btn {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.order-btn:hover {
+  background-color: #fff;
+}
+
+.order-btn:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+/* button style end */
+
+/* slider style end */
