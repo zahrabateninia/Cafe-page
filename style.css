@@ -17,7 +17,7 @@
     outline: none;
     border: none;
     text-transform: capitalize;
-    transition: all .2 linear;
+    transition: all .2s linear;
 }
 
 html{
@@ -27,33 +27,31 @@ html{
 }
 /* navbar style start */
 header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color: var(--dark-slate-blue);
-    padding: 1.7rem 3rem; 
-    /* a padding of 7% of the element's containing block's 
-    width for the left and right padding. */
-    display: flex;
-    align-items: center;
+    padding: 1.7rem 3rem;
     height: 8rem;
-    /* justify-content: space-between; */
     box-shadow: var(--box-shadow);
     z-index: 10000;
 }
-header .navbar{
-    margin: 0 auto;
-    display: flex;
-    gap: 1rem;
 
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 header .navbar a{
     font-size: 1.5rem;
     color: var(--light-beige);
     padding: .5rem 7%;
     border: .1rem solid transparent; 
-    /* it won't have a visible color but will still occupy the specified width */
+    padding: .5rem 1rem; 
 
 }
 
@@ -145,3 +143,52 @@ height: 100vh;
 }
 
 /* slider style end */
+
+/* menu style start */
+.menu {
+    background-image: url(images/coffeeSeeds.jpg);
+    box-shadow: rgb(235, 238, 242) 0px 20px 30px -10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .heading{
+    padding-bottom: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--light-brown);
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8),
+     -3px 0px 7px rgba(81,67,21,0.8),
+      0px 4px 7px rgba(81,67,21,0.8);
+}
+
+.menu .main-menu{
+    background-color: var(--light-brown);
+    margin: 4rem;
+    padding: 4rem;
+    border-radius: 4px;
+}
+
+.menu-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.menu-item h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: .5rem;
+    letter-spacing: 1px;
+}
+.menu-item p{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .5rem;
+}
+/* menu style end */
