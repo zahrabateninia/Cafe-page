@@ -32,11 +32,31 @@ header{
     left: 0;
     right: 0;
     background-color: var(--dark-slate-blue);
-    padding: 3rem 7%; 
+    padding: 1.7rem 7%; 
     /* a padding of 7% of the element's containing block's 
     width for the left and right padding. */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     box-shadow: var(--box-shadow);
+}
+header .navbar{
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+
+}
+header .navbar a{
+    font-size: 1.5rem;
+    color: var(--light-beige);
+    padding: .5rem 1rem;
+    border: .1rem solid transparent; 
+    /* it won't have a visible color but will still occupy the specified width */
+
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    border: .1rem solid rgba(198, 172, 143, .2);
 }
