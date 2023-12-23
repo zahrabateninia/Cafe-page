@@ -6,7 +6,7 @@
     --light-beige: rgb(234, 224, 213);
     --light-brown: rgb(198, 172, 143);
     --dark-coffee: rgb(94, 80, 63);
-    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .3);
 }
 *{
     font-family: 'Roboto', sans-serif;
@@ -34,7 +34,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--dark-slate-blue);
+    background-color: var(--dark-coffee);
     padding: 1.7rem 3rem;
     height: 8rem;
     box-shadow: var(--box-shadow);
@@ -152,6 +152,7 @@ height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .menu .heading{
     padding-bottom: 2rem;
@@ -194,20 +195,30 @@ height: 100vh;
 
 /* contact style start */
 .contact{
-    background-color: var(--light-brown);
+    /* background-color: var(--light-beige); */
+    background: url(images/table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-
+    height: 100vh;
 }
 
 .contact .info{
     display: grid;
-    gap: 1rem;
+    gap: 1.2rem;
     font-size: 1.2rem;
     font-weight: 400;
-    opacity: .8;
+    opacity: .9;
+    font-size: 1.3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+     padding: 2rem;
+     background-color: var(--light-brown);
+     border-radius: 2rem;
+ 
 }
 .contact .map iframe{
     padding: 3rem;
@@ -221,5 +232,10 @@ height: 100vh;
 .icon{
     width: 1.5rem;
     height: 1.5rem;
+    vertical-align: middle;
+    margin-right: .3rem;
+    opacity: .9;
+
 }
+
 /* contact style end */
