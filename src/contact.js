@@ -25,6 +25,10 @@ export default function createContactSection() {
     const contactSection = document.createElement('div');
     contactSection.classList.add('contact');
     contactSection.id = 'contact';
+
+    const info = document.createElement("div");
+    info.classList.add('info');
+    contactSection.appendChild(info);
   
     const contactInfo = [
       {
@@ -48,27 +52,28 @@ export default function createContactSection() {
       },
     ];
   
-    contactInfo.forEach((info) => {
+    contactInfo.forEach((item) => {
       const para = document.createElement('p');
-      para.classList.add(info.className);
+      para.classList.add(item.className);
   
       const icon = document.createElement('img');
-      icon.src = info.iconSrc;
-      icon.alt = info.iconAlt;
+      icon.src = item.iconSrc;
+      icon.alt = item.iconAlt;
       icon.classList.add('icon');
       para.appendChild(icon);
+
   
-      if (info.href) {
+      if (item.href) {
         const link = document.createElement('a');
-        link.href = info.href;
+        link.href = item.href;
         link.classList.add('telephone');
-        link.textContent = info.textContent;
+        link.textContent = item.textContent;
         para.appendChild(link);
       } else {
-        para.innerHTML += info.textContent;
+        para.innerHTML += item.textContent;
       }
   
-      contactSection.appendChild(para);
+      info.appendChild(para);
     });
 
     // Creating the map div
