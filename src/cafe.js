@@ -57,10 +57,11 @@ export default function initializeWebsite() {
     const content = document.getElementById("content");
   
     content.appendChild(createHeader());
-    content.appendChild(loadHome());
-    content.appendChild(initializeSwiper());
 
-//     content.appendChild(loadMenu());
-//     content.appendChild(loadContact());
+    content.appendChild(loadHome());
+    initializeSwiper()
+   
+    content.appendChild(loadMenu());
+    content.appendChild(loadContact());
 }
 
