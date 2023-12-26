@@ -228,7 +228,6 @@ height: 100vh;
 
 /* contact style start */
 .contact{
-    /* background-color: var(--light-beige); */
     background: url(images/table.jpg);
     background-size: cover;
     background-repeat: no-repeat;
