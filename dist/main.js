@@ -1,15 +1,1 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper(".home-slider", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 4500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        loop: true,
-    });
-});
+(()=>{"use strict";!function(){const e=document.getElementById("content");e.appendChild(function(){const e=document.createElement("header"),t=document.createElement("a");t.href="#",t.classList.add("logo");const n=document.createElement("img");n.src="./images/cafe-high-resolution-logo-transparent.png",n.classList="cafe-logo",n.alt="logo",t.appendChild(n);const a=document.createElement("nav");a.classList.add("navbar");const o=document.createElement("a");o.href="#home",o.textContent="Home";const c=document.createElement("a");c.href="#menu",c.textContent="Menu";const l=document.createElement("a");return l.href="#contact",l.textContent="Contact",a.append(o,c,l),e.append(t,a),e}()),e.appendChild(void new Swiper(".home-slider",{spaceBetween:30,centeredSlides:!0,autoplay:{delay:4500,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0},loop:!0}))}()})();

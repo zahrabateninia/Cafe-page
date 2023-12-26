@@ -1,3 +1,9 @@
+import loadHome from "./home"
+import initializeSwiper from "./initializeSwiper";
+import loadMenu from "./menu"
+import loadContact from "./contact"
+
+
 // <!-- header section start -->
 //     <header>
 //         <a href="#" class="logo"><img src="./images/cafe-high-resolution-logo-transparent.png" class='cafe-logo' alt="logo"></a> 
@@ -42,5 +48,19 @@ function createHeader(){
     nav.append(homeLink, menuLink, contactLink);
     header.append(cafeLogo, nav);
 
+    return header;
+
+}
+
+
+export default function initializeWebsite() {
+    const content = document.getElementById("content");
+  
+    content.appendChild(createHeader());
+    content.appendChild(loadHome());
+    content.appendChild(initializeSwiper());
+
+//     content.appendChild(loadMenu());
+//     content.appendChild(loadContact());
 }
 

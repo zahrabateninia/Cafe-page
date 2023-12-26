@@ -34,7 +34,9 @@
 //     </div>
 //     <!-- slider section end -->
 
-function createHomeSlider() {
+
+
+export default function createHomeSlider() {
     const homeDiv = document.createElement('div');
     homeDiv.classList.add('home');
     homeDiv.id = 'home';
@@ -94,21 +96,6 @@ function createHomeSlider() {
         swiperSlide.appendChild(slideContent);
         swiperWrapper.appendChild(swiperSlide);
     });
+    
+    return swiperContainer;
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper(".home-slider", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 4500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        loop: true,
-    });
-});
-
