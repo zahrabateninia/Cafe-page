@@ -77,7 +77,7 @@ export default function createContactSection() {
 
     // Creating the map iframe
     const mapIframe = document.createElement('iframe');
-    mapIframe.src = 'https://www.google.com/maps/embed?pb= ...'; // Add your Google Maps embed URL
+    mapIframe.src = 'https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2624.9997818361926!2d2.292091562063815!3d48.85821455059916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEiffel%20Tower!5e0!3m2!1sen!2suk!4v1703275961736!5m2!1sen!2suk'; 
     mapIframe.width = '600';
     mapIframe.height = '450';
     mapIframe.style.border = '0';
