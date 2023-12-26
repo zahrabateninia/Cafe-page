@@ -47,6 +47,7 @@ export default function createHomeSlider() {
     const swiperWrapper = document.createElement('div');
     swiperWrapper.classList.add('swiper-wrapper', 'wrapper');
     swiperContainer.appendChild(swiperWrapper);
+    homeDiv.appendChild(swiperContainer);
 
     
     const slidesData = [
@@ -97,5 +98,5 @@ export default function createHomeSlider() {
         swiperWrapper.appendChild(swiperSlide);
     });
     
-    return swiperContainer;
+    return homeDiv;
 }
