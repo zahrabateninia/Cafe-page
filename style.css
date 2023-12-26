@@ -108,14 +108,14 @@ height: 100vh;
 
 .home .home-slider .slide .content h3{
     color: #fff;
-    font-size: 6.3rem;
+    font-size: 7.5rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1.5px;
 }
 
 .home .home-slider .slide .content h4{
     color: #fff;
-    font-size: 5.2rem;
+    font-size: 6.2rem;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1.5px;
     text-shadow: 0 0 3px var(--dark-coffee), 0 0 7px var(--dark-coffee);
